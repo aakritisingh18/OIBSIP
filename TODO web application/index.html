@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="scrippt.js" defer></script>
+    <title>TO-DO APPLICATION</title>
+</head>
+<body>
+    <section class="todo">
+        <h2>To-do list</h2>
+        <div class="input">
+            <input type="text" class="input-field" id="todoInput" placeholder="Add a new todo">
+            <input type="date" id="todoDate">
+            <input type="time" id="todoTime">
+            <button class="btn" id="addButton">Add</button>
+        </div>
+        <ul class="scroll" id="todoList">
+           
+        </ul>
+        <div>
+            <hr class="counter">
+            <div class="counterContainer">
+                <p><span id="todoCount">0</span> items total </p>
+                <button id="deleteButton">Delete All</button>
+                <button id="deleteSelectedButton">Delete Selected</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <p class="made-by">Made By</p>
+            <p class="author">Aakriti Singh</p>
+        </div>
+    </footer>
+    <audio id="alarmSound" src="alarm.mp3" preload="auto"></audio>
+</body>
+</html>

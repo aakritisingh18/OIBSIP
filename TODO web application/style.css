@@ -1,0 +1,153 @@
+:root {
+
+    --gradient: linear-gradient(
+        200deg,
+        rgba(30, 112, 123, 0.73) 0%,
+        peachpuff 100%
+    );
+    --dark: black;
+    --grey: #b1bacb;
+    --grey-border: rgba(210, 210, 210, 0.75);
+    --grey-dark: #eeeeee;
+    --blue: black;
+    --green: #00d8a7;
+    --white: white;
+}
+
+body {
+    background: var(--gradient);
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+
+.todo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 2rem;
+    background: var(--white);
+    padding: 2rem;
+    height: 50%;
+    width: 50%;
+    box-shadow: 0 1rem 3rem 1rem rgba(0, 23, 71, 0.15);
+    max-width: 30rem;
+}
+
+h2 {
+    text-transform: uppercase;
+    color: var(--dark);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.input {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.input-field {
+    flex: 1;
+    border: 0.06rem solid #d2d2d2bf;
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    font-size: 1rem;
+}
+
+input[type="text"]::placeholder {
+    color: var(--grey);
+}
+
+input[type="date"], input[type="time"] {
+    border: 0.06rem solid #d2d2d2bf;
+    border-radius: 0.5rem;
+    padding: 0.7rem;
+    font-size: 1rem;
+}
+
+.btn {
+    color: rgb(149, 152, 155);
+    font-size: 1.1rem;
+    padding: 0.7rem 1.5rem;
+    border-radius: 0.3rem;
+    background-color: var(--blue);
+    border: none;
+    cursor: pointer;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+.todo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.todo-checkbox {
+    margin-right: 0.5rem;
+}
+
+.disabled {
+    text-decoration: line-through;
+    color: #b0b0b0;
+}
+
+.counterContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.counter {
+    width: 100%;
+    border: none;
+    height: 0.1rem;
+    background: var(--grey-border);
+}
+
+.footer {
+    text-align: center;
+    color: var(--dark);
+}
+
+.alarm-notification {
+    color: var(--dark);
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+
+audio {
+    display: none;
+}
+
+input[type="checkbox"].select-checkbox {
+    margin-right: 0.5rem;
+}
+
+.delete-selected-button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    margin-left: 0.5rem;
+}
+
+.delete-selected-button:hover {
+    background-color: #ff1a1a;
+}
